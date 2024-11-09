@@ -1,0 +1,98 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Pacifico&family=Righteous&display=swap');
+
+
+@import url(header.css);
+@import url(home.css);
+@import url(menu.css);
+
+
+:root {
+    --cor-primaria: #333333;
+    --cor-secundaria: #ffcc00;
+    --cor-white: #ffffff;
+    --cor-botao: #d9534f;
+    --cor-botao-sucesso: #28a745;;
+    --cor-botao-hover: #ff6600;
+    --font-family-1: "Mitr", sans-serif;
+    --font-family-2: "Righteous", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+
+}
+
+a {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1240px) {
+    .home {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .header-nav {
+        display: none;
+    }
+    .nav-bars i {
+        display: block;
+    }
+    .home-title {
+        max-width: 20ch;
+    }
+    .home-right img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .home-title {
+        margin-top: 2rem;
+        font-size: 4rem;
+    }
+}
+
+
+@media (max-width: 490px) {
+
+    .header-logo {
+        font-size: 1.5rem;
+    }
+    .nav-shopping i {
+        font-size: 1rem;
+    }
+    .nav-user i {
+        font-size: 1rem;
+    }
+    .nav-bars i {
+        font-size: 1rem;
+    }
+    .home-title {
+        font-size: 3.5rem;
+    }
+    .home-description span {
+        font-size: 2rem;
+    }
+    .nav-xmark {
+        font-size: 1.2rem;
+    }
+}
+
+

@@ -1,0 +1,158 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--cor-primaria);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+    font-family: var(--font-family-1);
+    z-index: 99;
+}
+
+.header-logo {
+    color: var(--cor-secundaria);
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-white);
+}
+
+.nav-a:hover {
+    color: var(--cor-secundaria);
+}
+
+
+/* Icones desktop */
+.nav-icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Ícone de carrinho */
+.nav-shopping {
+    position: relative;
+}
+
+.nav-shopping i {
+    font-size: 1.2rem;
+    color: var(--cor-white);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-shopping i:hover {
+    color: #ff6600;
+}
+
+/* Ponto de notificação */
+.nav-shopping .dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Ícone do usuário */
+.nav-user i {
+    font-size: 1.2rem;
+    color: var(--cor-white);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-user i:hover {
+    color: #ff6600;
+}
+
+/* Ícone do menu (hamburguer) */
+.nav-bars i {
+    display: none;
+    font-size: 1.2rem;
+    color: var(--cor-white);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-bars i:hover {
+    color: #ff6600;
+}
+
+
+/* Ocultar o menu mobile por padrão */
+
+.mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    transition: left 0.6s ease, opacity 0.6s ease; 
+    z-index: 1;
+    opacity: 0; 
+}
+
+.mobile .nav-ul {
+    text-align: center;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+.mobile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+}
+
+
+.mobile.show {
+    display: flex;
+    left: 0;
+    opacity: 1; 
+}
+
+.nav-xmark {
+    position: absolute;
+    top: 0.5rem;
+    right: 1.1rem;
+    font-size: 1.5rem;
+    color: var(--cor-white);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-xmark i:hover {
+    color: #ff6600;
+}
