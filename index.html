@@ -55,35 +55,60 @@
 
     </header>
 
-    <section class="home">
-        <div class="home-left">
-            <h1 class="home-title">Todo dia é dia de Hamburguer</h1>
-            <p class="home-description"><span>hambúrgueres</span><br>para todos os gostos!</p>
-            
-            <button class="home-btn">Descubra</button>
+    <section class="banner-container">
+        <div class="banner" id="banner1">
+            <img src="images/Frame 1.png" alt="Banner 1" class="banner-img">
         </div>
-        <div class="home-right">
-            <img src="images/home-burger.png" alt="hamburguer principal">
+        <div class="banner" id="banner3">
+            <img src="images/Frame 2.png" alt="Banner 3" class="banner-img">
         </div>
-
-    </section>
-
-    <section class="menu">
-        <div class="menu-card">
-            <div class="menu-img">
-                <img src="/images/popular-burger-big.png" alt="burger big">
-            </div>
-            <div class="menu-a">
-                <a href="#">burger big</a>
-            </div>
-            
-        </div>
+        
+        <button class="arrow left" onclick="moveBanner('prev')">&#10094;</button>
+        <button class="arrow right" onclick="moveBanner('next')">&#10095;</button>
     </section>
 
 
 
+    <setion class="menu-container">
+        <div class="menu-description">
+            <h1>Explore Menu</h1>
+            <p> Crie conexões emocionais ao incluir pratos inspirados na história local ou na sua própria história.</p>
+        </div>
+            
+        <div class="menu-list">
+            <div class="menu-list-item">
+                <img src="images/popular-burger-big.png" alt="hamburguer1">
+                <p>burger-big</p> 
+            </div>
+        
+            <div class="menu-list-item">
+                <img src="images/popular-burger-chicken.png" alt="hamburguer1">
+                <p>burger-chicken</p> 
+            </div>
 
+            <div class="menu-list-item">
+                <img src="images/popular-burger-classic.png" alt="hamburguer1">
+                <p>burger-classic</p> 
+            </div>
 
+            <div class="menu-list-item">
+                <img src="images/popular-burger-grill.png" alt="hamburguer1">
+                <p>burger-grill</p> 
+            </div>
+
+            <div class="menu-list-item">
+                <img src="images/popular-burger-meat.png" alt="hamburguer1">
+                <p>burguer-meat</p> 
+            </div>
+
+            <div class="menu-list-item">
+                <img src="images/popular-burger-classic.png" alt="hamburguer1">
+                <p>burger-classic</p> 
+            </div>
+            
+        </div>
+    </section>
+   
     <script src="js/script.js"></script>
 </body>
 </html>

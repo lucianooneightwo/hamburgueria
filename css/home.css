@@ -1,85 +1,51 @@
-.home {
-    position: relative; 
-    display: flex;
-    padding-inline: 3rem;
-    align-items: center;
-    justify-content: center;
-    background-image: url(/images/home.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff; 
-    z-index: 1;
+
+
+/* Contêiner do banner */
+.banner-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 80px;
 }
 
-.home::before {
-    content: "";
+/* Banners */
+.banner {
+    width: 100%;  
+    height: auto;  
+    display: none;
+    position: relative;
+}
+
+/* Imagem dentro do banner */
+.banner img {
+    width: 100%;   
+    height: auto;  
+    object-fit: cover; 
+    cursor: pointer; 
+}
+
+/* Botões de navegação */
+.arrow {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9); 
-    z-index: -1;
-}
-
-.home-right,
-.home-left {
-    flex: 1;
-    margin-top: 5rem;
-}
-
-
-.home-title {
-    color: var(--cor-white);
-    font-size: 5rem;
-    line-height: 1.1;
-    font-weight: 600;
-    font-family: var(--font-family-2);
-}
-
-.home-description {
-    color: var(--cor-white);
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-block: 1.5rem;
-    max-width: 35ch;
-    font-family: var(--font-family-1);
-}
-
-.home-description span {
-    font-family: var(--font-family-2);
-    font-size: 3rem;
-    color: var(--cor-white);
-}
-
-.home-right {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100%; 
-}
-
-.home-right img {
-    max-width: 540px;
-    width: 100%;
-    height: auto;
-    margin-inline: auto;
-}
-
-.home-btn {
-    font-size: 1rem;
-    font-weight: 500;
-    background-color: var(--cor-primaria);
-    color: var(--cor-white);
-    padding: 0.5em 2em;
-    border-radius: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     border: none;
+    font-size: 2rem;
     cursor: pointer;
-    font-family: var(--font-family-1);
-    transition: background-color 0.3s ease;
+    padding: 10px;
+    z-index: 10;
 }
 
-.home-btn:hover {
-    color: var(--cor-secundaria);
+/* Botão à esquerda */
+.left {
+    left: 10px;
 }
+
+/* Botão à direita */
+.right {
+    right: 10px;
+}
+
